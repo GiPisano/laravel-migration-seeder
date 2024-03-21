@@ -11,7 +11,7 @@
         <thead>
           <tr>
             <th>id</th>
-            {{-- <th>company</th> --}}
+            <th>company</th>
             <th>departure_station</th>
             <th>arrival_station</th>
             <th>departure_time</th>
@@ -28,8 +28,8 @@
           @forelse($trains as $train)
 
             <tr>
-              {{-- <td>{{$train->id}}</td> --}}
-              <td>{{$train->company}}</td>
+              <td>{{$train->id}}</td>
+              <td>{{$train->society}}</td>
               <td>{{$train->departure_station}}</td>
               <td>{{$train->arrival_station}}</td>
               <td>{{$train->departure_time}}</td>
